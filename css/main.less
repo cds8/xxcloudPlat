@@ -1,0 +1,62 @@
+.bob{border:1px solid #000;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.keyframes (@name, @frames) {
+    @-webkit-keyframes @name { @frames(); }
+       @-moz-keyframes @name { @frames(); }
+   	    @-ms-keyframes @name { @frames(); }
+    	 @-o-keyframes @name { @frames(); }
+            @keyframes @name { @frames(); }
+}
+//  例子
+// .keyframes (line, {
+//     0%{background-size:0% 2px;}
+//     100%{background-size:100% 2px;}
+// });
+.transform(@animate){
+	-webkit-transform:@animate;
+	   -moz-transform:@animate;
+	    -ms-transform:@animate;
+	     -o-transform:@animate;	
+	        transform:@animate;	        
+}
+.transition(@animate){
+	-webkit-transition:@animate;
+	   -moz-transition:@animate;
+	    -ms-transition:@animate;
+	     -o-transition:@animate;	
+	        transition:@animate;
+}
+.animation(@keyframes){
+	-webkit-animation:@keyframes;
+	   -moz-animation:@keyframes;
+	    -ms-animation:@keyframes;
+	     -o-animation:@keyframes;
+	        animation:@keyframes; 
+}
+.opacity(@value){
+	-webkit-opacity:@value;
+	   -moz-opacity:@value;
+	    -ms-opacity:@value;
+	     -o-opacity:@value;
+	        opacity:@value; 
+}
+.borderR(@value){
+	-webkit-border-radius:@value;
+	   -moz-border-radius:@value;
+	    -ms-border-radius:@value;
+	     -o-border-radius:@value;
+	        border-radius:@value;
+}
+.box-shadow(@value){
+	-webkit-box-shadow:@value;
+	   -moz-box-shadow:@value;
+	    -ms-box-shadow:@value;
+	     -o-box-shadow:@value;
+	        box-shadow:@value;
+}
+.background-size(@value){
+	-webkit-background-size:@value;
+	   -moz-background-size:@value;
+	    -ms-background-size:@value;
+	     -o-background-size:@value;
+	        background-size:@value;
+}
